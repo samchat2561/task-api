@@ -1,10 +1,11 @@
 import express, { Application, Request, Response } from 'express'; 
-import taskRoutes from './routes/taskRoutes';
+// import taskRoutes from './routes/taskRoutes';
 import apiRoutes from './routes/apiRoutes';
 
 const app: Application = express();
 app.use(express.json());            // Middleware to parse JSON bodies
-app.use('/api', taskRoutes);      // Use task routes with '/api' prefix
+
+// app.use('/api', taskRoutes);      // Use task routes with '/api' prefix
 app.use('/tasks', apiRoutes);  // Use external API routes with '/tasks' prefix
 
 //GET: http://localhost:8080/

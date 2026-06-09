@@ -1,20 +1,18 @@
 {
     "tasks": [
         {
-        "id": 1,
-        "title": "Sample Task",
-        "description": "This is a sample task",
-        "completed": false,
-        "imageUrl": "https://via.placeholder.com/150",
-        "linkUrl": "https://example.com"
+            "title": "เรียน TypeScript ฉบับอัปเดต",
+            "completed": true,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+            "linkUrl": "https://www.typescriptlang.org/",
+            "id": "1"
         },
         {
-        "id": 2,
-        "title": "Another Task",    
-        "description": "This is another sample task",
-        "completed": true,
-        "imageUrl": "https://via.placeholder.com/150",
-        "linkUrl": "https://example.com"
+            "id": "2",
+            "title": "เรียน React",
+            "completed": false,
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+            "linkUrl": "https://reactjs.org/"
         }
     ]
 }

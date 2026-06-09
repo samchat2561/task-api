@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:server": "nodemon src/app.ts",
-    "start:json-server": "json-server --watch db.json",
+    "start:json-server": "json-server --watch data.json",
     "dev": "concurrently \"npm run start:server\" \"npm run start:json-server\""
   },
   "keywords": [],
