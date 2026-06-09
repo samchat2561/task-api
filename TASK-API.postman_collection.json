@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "6ad9ae80-430c-48f9-9770-610c62510187",
+    "name": "TASK-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "16794506"
+  },
+  "item": [
+    {
+      "name": "GET Task API",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST Task API",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Test\", \r\n    \"description\":\"Test description\",\r\n    \"completed\": false, \r\n    \"imageUrl\": \"https://images.unsplash.com/photo-1780659760416-3b62b5f18e11\", \r\n    \"linkUrl\": \"https://images.unsplash.com/\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT TAsk API",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Sample Task\", \r\n    \"description\":\"Sample description\",\r\n    \"completed\": true, \r\n    \"imageUrl\": \"https://images.unsplash.com/photo-1780659760416-3b62b5f18e11\", \r\n    \"linkUrl\": \"https://images.unsplash.com/\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELET TAsk API",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Test\", \r\n    \"description\":\"Test description\",\r\n    \"completed\": false, \r\n    \"imageUrl\": \"https://images.unsplash.com/photo-1780659760416-3b62b5f18e11\", \r\n    \"linkUrl\": \"https://images.unsplash.com/\"\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/tasks/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
