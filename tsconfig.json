@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES6",              // แปลงโค้ดเป็น ES6 เพื่อให้รันบน Node.js ได้
+    "module": "commonjs",         // ใช้ module system แบบ CommonJS ที่ Express ต้องการ
+    "outDir": "./dist",           // โฟลเดอร์ที่เก็บไฟล์ JS ที่ compile แล้ว
+    "rootDir": "./src",           // โฟลเดอร์ต้นทางของไฟล์ TypeScript
+    "strict": true,               // เปิดใช้งานโหมดเข้มงวด (แนะนำให้เปิดเพื่อลดบั๊ก)
+    "esModuleInterop": true,      // ช่วยให้ import โมดูลแบบ CommonJS ได้ง่ายขึ้น
+    "skipLibCheck": true,         // ข้ามการเช็ค type ของไฟล์ library เพื่อความรวดเร็ว
+    "forceConsistentCasingInFileNames": true,
+
+    /* Source Map (แนะนำสำหรับการดีบั๊ก) */
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],        // สั่งให้ TypeScript มองหาไฟล์ในโฟลเดอร์ src ทั้งหมด
+  "exclude": ["node_modules"]     // ละเว้นโฟลเดอร์ node_modules
+}
