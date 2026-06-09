@@ -18,4 +18,15 @@ router.post('/tasks', (req: Request, res: Response) => {
     res.status(201).json({ data: newTask });
 });
 
+router.put('/tasks/:id', (req: Request, res: Response) => {
+    const taskId = req.params.id;
+    const taskIndex = tasks.findIndex(task => task.id === Number(taskId));
+    if (taskIndex !== -1) {
+        tasks[taskIndex] = { ...tasks[taskIndex], ...req.body };
+        return res.status(200).json({ data: tasks[taskIndex] });
+    } else {
+        return res.status(404).json({ message: 'Task not found' });
+    }
+});
+
 export default router;
